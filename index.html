@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="fr">
+<head></head>
+<body>
+	Redirection en cours
+	<script type="text/javascript">
+		if (window.localtion.hash) {
+			var redirection = atob(window.location.hash.slice(1, window.location.hash.indexOf("?")));
+			window.localtion.href = redirection;
+		}
+	</script>
+</body>
+</html>
