@@ -179,6 +179,7 @@ function onRenewParty(e) {
             renew = confirm('C\'est terminé ! Revenir au début ?');
             if (renew) {
                 document.forms[0].reset();
+                document.getElementById('tirage-button').setAttribute('disabled', 'disabled');
                 navigateTo('div#q0');
                 historyEvents = [];
             }
@@ -196,4 +197,6 @@ document.forms[0].reset();
 document.forms[0].onsubmit = function (e) {
     e.preventDefault();
     e.stopPropagation();
+
+    return false;
 };

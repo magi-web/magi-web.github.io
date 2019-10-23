@@ -167,7 +167,7 @@ A tout moment, vous pouvez demander la suppression de vos données par mail à d
             </div>
             <div id="tirage" class="question flex flex-column justify-between" style="min-width: 500px">
                 <p class="tc">
-                    <button role="button" onclick="lancerTirage()">Lancer le tirage au sort</button>
+                    <button id="tirage-button" role="button" type="button" onclick="lancerTirage()" disabled>Lancer le tirage au sort</button>
                 </p>
                 <p id="tirage-content" class="v-hidden">Le gagnant est : <span id="tirage-selection"></span></p>
             </div>

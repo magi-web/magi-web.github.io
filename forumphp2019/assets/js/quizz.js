@@ -263,6 +263,7 @@ document.addEventListener('konami', function(e) {
     let order = prompt("Que souhaitez vous faire ?","Entrez 'tirage' ou 'export'");
     if (order === 'tirage') {
         navigateTo('div#tirage', '', e);
+        document.getElementById('tirage-button').removeAttribute('disabled');
     } else if (order === 'export') {
         saveLocalStorageToFile();
     }
